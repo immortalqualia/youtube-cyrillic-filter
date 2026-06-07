@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Cyrillic Filter",
+  "version": "1.0.0",
+  "description": "Removes YouTube video cards that contain Cyrillic text.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.youtube.com/*",
+        "https://youtube.com/*",
+        "https://m.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
